@@ -19,6 +19,6 @@ An example of how to use [Koloda](https://github.com/Yalantis/Koloda) with [Cart
 	```
 	
 	As a result you should get:
-	![preview](resources/build_phase.png)
+	![preview](Resources/build_phase.png)
 		
 9. Build the project
