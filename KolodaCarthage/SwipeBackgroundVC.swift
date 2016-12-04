@@ -10,13 +10,13 @@ import UIKit
 import Koloda
 import pop
 
-private let numberOfCards: UInt = 5
+private let numberOfCards: Int = 5
 private let frameAnimationSpringBounciness: CGFloat = 9
 private let frameAnimationSpringSpeed: CGFloat = 16
 private let kolodaCountOfVisibleCards = 2
 private let kolodaAlphaValueSemiTransparent: CGFloat = 0.1
 
-class BackgroundAnimationViewController: UIViewController {
+class SwipeBackgroundVC: UIViewController {
 
     @IBOutlet weak var kolodaView: CustomKolodaView!
     
@@ -29,17 +29,17 @@ class BackgroundAnimationViewController: UIViewController {
         kolodaView.dataSource = self
         kolodaView.animator = BackgroundKolodaAnimator(koloda: kolodaView)
         
-        self.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
+        self.modalTransitionStyle = UIModalTransitionStyle.flipHorizontal
     }
     
     
     //MARK: IBActions
     @IBAction func leftButtonTapped() {
-        kolodaView?.swipe(SwipeResultDirection.Left)
+        kolodaView?.swipe(SwipeResultDirection.left)
     }
     
     @IBAction func rightButtonTapped() {
-        kolodaView?.swipe(SwipeResultDirection.Right)
+        kolodaView?.swipe(SwipeResultDirection.right)
     }
     
     @IBAction func undoButtonTapped() {
@@ -48,49 +48,49 @@ class BackgroundAnimationViewController: UIViewController {
 }
 
 //MARK: KolodaViewDelegate
-extension BackgroundAnimationViewController: KolodaViewDelegate {
+extension SwipeBackgroundVC: KolodaViewDelegate {
     
-    func kolodaDidRunOutOfCards(koloda: KolodaView) {
+    func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
         kolodaView.resetCurrentCardIndex()
     }
     
-    func koloda(koloda: KolodaView, didSelectCardAtIndex index: UInt) {
-        UIApplication.sharedApplication().openURL(NSURL(string: "http://yalantis.com/")!)
+    func koloda(_ koloda: KolodaView, didSelectCardAtIndex index: UInt) {
+        UIApplication.shared.openURL(URL(string: "http://yalantis.com/")!)
     }
     
-    func kolodaShouldApplyAppearAnimation(koloda: KolodaView) -> Bool {
+    func kolodaShouldApplyAppearAnimation(_ koloda: KolodaView) -> Bool {
         return true
     }
     
-    func kolodaShouldMoveBackgroundCard(koloda: KolodaView) -> Bool {
+    func kolodaShouldMoveBackgroundCard(_ koloda: KolodaView) -> Bool {
         return false
     }
     
-    func kolodaShouldTransparentizeNextCard(koloda: KolodaView) -> Bool {
+    func kolodaShouldTransparentizeNextCard(_ koloda: KolodaView) -> Bool {
         return true
     }
     
     func koloda(kolodaBackgroundCardAnimation koloda: KolodaView) -> POPPropertyAnimation? {
         let animation = POPSpringAnimation(propertyNamed: kPOPViewFrame)
-        animation.springBounciness = frameAnimationSpringBounciness
-        animation.springSpeed = frameAnimationSpringSpeed
+        animation?.springBounciness = frameAnimationSpringBounciness
+        animation?.springSpeed = frameAnimationSpringSpeed
         return animation
     }
 }
 
 //MARK: KolodaViewDataSource
-extension BackgroundAnimationViewController: KolodaViewDataSource {
+extension SwipeBackgroundVC: KolodaViewDataSource {
     
-    func kolodaNumberOfCards(koloda: KolodaView) -> UInt {
+    func kolodaNumberOfCards(_ koloda: KolodaView) -> Int {
         return numberOfCards
     }
     
-    func koloda(koloda: KolodaView, viewForCardAtIndex index: UInt) -> UIView {
+    func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
         return UIImageView(image: UIImage(named: "cards_\(index + 1)"))
     }
     
-    func koloda(koloda: KolodaView, viewForCardOverlayAtIndex index: UInt) -> OverlayView? {
-        return NSBundle.mainBundle().loadNibNamed("CustomOverlayView",
-            owner: self, options: nil)[0] as? OverlayView
+    func koloda(_ koloda: KolodaView, viewForCardOverlayAtIndex index: Int) -> OverlayView? {
+        return Bundle.main.loadNibNamed("CustomOverlayView",
+            owner: self, options: nil)?[0] as? OverlayView
     }
 }
