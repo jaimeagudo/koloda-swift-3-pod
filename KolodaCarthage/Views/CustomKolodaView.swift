@@ -19,7 +19,6 @@ let backgroundCardScalePercent:CGFloat = 1.5
 class CustomKolodaView: KolodaView {
     override open func frameForCard(at index: Int) -> CGRect {
 
-//    override func frameForCardAtIndex(_ index: UInt) -> CGRect {
         if index == 0 {
             let topOffset:CGFloat = defaultTopOffset
             let xOffset:CGFloat = defaultHorizontalOffset
@@ -30,6 +29,7 @@ class CustomKolodaView: KolodaView {
             
             return frame
         } else if index == 1 {
+            //Background image ?
             let horizontalMargin = -self.bounds.width * backgroundCardHorizontalMarginMultiplier
             let width = self.bounds.width * backgroundCardScalePercent
             let height = width * defaultHeightRatio

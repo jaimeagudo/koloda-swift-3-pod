@@ -58,6 +58,7 @@ extension SwipeVC: KolodaViewDelegate {
         kolodaView.insertCardAtIndexRange(position..<position, animated: true)
     }
     
+    //    @abstract This method is called when one of cards is tapped.
     func koloda(_ koloda: KolodaView, didSelectCardAtIndex index: UInt) {
         UIApplication.shared.openURL(URL(string: "http://yalantis.com/")!)
     }
@@ -73,6 +74,7 @@ extension SwipeVC: KolodaViewDataSource {
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
         return UIImageView(image: dataSource[Int(index)])
     }
+    
     
     func koloda(_ koloda: KolodaView, viewForCardOverlayAt index: Int) -> OverlayView? {
         return Bundle.main.loadNibNamed("OverlayView",
