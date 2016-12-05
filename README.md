@@ -4,7 +4,7 @@ An example of how to use [Koloda](https://github.com/Yalantis/Koloda) with **SWI
 
 ## Usage
 
-	```
-pod install
-open KolodaCarthage.xcworkspace
-	```
+```
+  pod install
+  open KolodaCarthage.xcworkspace
+```
