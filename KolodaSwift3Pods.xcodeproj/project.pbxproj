@@ -28,7 +28,7 @@
 		4E7E0053786CFAC14733FFA0 /* Pods-KolodaCarthage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KolodaCarthage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KolodaCarthage/Pods-KolodaCarthage.debug.xcconfig"; sourceTree = "<group>"; };
 		69E5B6120A47FA05A2F66DA9 /* Pods_KolodaCarthage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KolodaCarthage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		708D40F6F35E64B6211FC664 /* Pods-KolodaCarthage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KolodaCarthage.release.xcconfig"; path = "Pods/Target Support Files/Pods-KolodaCarthage/Pods-KolodaCarthage.release.xcconfig"; sourceTree = "<group>"; };
-		C51B17581D6AE986002CBBDD /* KolodaCarthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KolodaCarthage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C51B17581D6AE986002CBBDD /* KolodaSwift3Pods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KolodaSwift3Pods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C51B175B1D6AE986002CBBDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C51B175D1D6AE986002CBBDD /* SwipeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeVC.swift; sourceTree = "<group>"; };
 		C51B17601D6AE986002CBBDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 		C51B17591D6AE986002CBBDD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C51B17581D6AE986002CBBDD /* KolodaCarthage.app */,
+				C51B17581D6AE986002CBBDD /* KolodaSwift3Pods.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,9 +129,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C51B17571D6AE986002CBBDD /* KolodaCarthage */ = {
+		C51B17571D6AE986002CBBDD /* KolodaSwift3Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C51B176A1D6AE986002CBBDD /* Build configuration list for PBXNativeTarget "KolodaCarthage" */;
+			buildConfigurationList = C51B176A1D6AE986002CBBDD /* Build configuration list for PBXNativeTarget "KolodaSwift3Pods" */;
 			buildPhases = (
 				ADCDDAED3C8BFEDE9889C4B7 /* [CP] Check Pods Manifest.lock */,
 				C51B17541D6AE986002CBBDD /* Sources */,
@@ -144,9 +144,9 @@
 			);
 			dependencies = (
 			);
-			name = KolodaCarthage;
+			name = KolodaSwift3Pods;
 			productName = KolodaCarthage;
-			productReference = C51B17581D6AE986002CBBDD /* KolodaCarthage.app */;
+			productReference = C51B17581D6AE986002CBBDD /* KolodaSwift3Pods.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -165,7 +165,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C51B17531D6AE986002CBBDD /* Build configuration list for PBXProject "KolodaCarthage" */;
+			buildConfigurationList = C51B17531D6AE986002CBBDD /* Build configuration list for PBXProject "KolodaSwift3Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -178,7 +178,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C51B17571D6AE986002CBBDD /* KolodaCarthage */,
+				C51B17571D6AE986002CBBDD /* KolodaSwift3Pods */,
 			);
 		};
 /* End PBXProject section */
@@ -377,7 +377,7 @@
 				);
 				INFOPLIST_FILE = KolodaCarthage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yalantis.KolodaCarthage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yalantis.KolodaSwift3Pods;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -394,7 +394,7 @@
 				);
 				INFOPLIST_FILE = KolodaCarthage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yalantis.KolodaCarthage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yalantis.KolodaSwift3Pods;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -403,7 +403,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C51B17531D6AE986002CBBDD /* Build configuration list for PBXProject "KolodaCarthage" */ = {
+		C51B17531D6AE986002CBBDD /* Build configuration list for PBXProject "KolodaSwift3Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C51B17681D6AE986002CBBDD /* Debug */,
@@ -412,7 +412,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C51B176A1D6AE986002CBBDD /* Build configuration list for PBXNativeTarget "KolodaCarthage" */ = {
+		C51B176A1D6AE986002CBBDD /* Build configuration list for PBXNativeTarget "KolodaSwift3Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C51B176B1D6AE986002CBBDD /* Debug */,

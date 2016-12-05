@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:KolodaCarthage.xcodeproj">
+      location = "group:/Users/jaime/Github/PAID2PARTY/CODE_PLAYGROUND/Koloda-Carthage-usage/KolodaSwift3Pods.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
