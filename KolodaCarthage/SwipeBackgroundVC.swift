@@ -89,7 +89,7 @@ extension SwipeBackgroundVC: KolodaViewDataSource {
         return UIImageView(image: UIImage(named: "cards_\(index + 1)"))
     }
     
-    func koloda(_ koloda: KolodaView, viewForCardOverlayAtIndex index: Int) -> OverlayView? {
+    func koloda(_ koloda: KolodaView, viewForCardOverlayAt index: Int) -> OverlayView? {
         return Bundle.main.loadNibNamed("CustomOverlayView",
             owner: self, options: nil)?[0] as? OverlayView
     }
