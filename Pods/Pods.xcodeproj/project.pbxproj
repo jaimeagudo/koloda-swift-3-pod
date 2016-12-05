@@ -476,9 +476,9 @@
 			productReference = 1728C1AFF691EF16F1139CEB8F0225CA /* Koloda.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		819D2F8F814C0D1A981E30D18FF1B333 /* Pods-KolodaCarthage */ = {
+		819D2F8F814C0D1A981E30D18FF1B333 /* Pods-KolodaSwift3Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA3884E64A244ED8B31430AC25A30A97 /* Build configuration list for PBXNativeTarget "Pods-KolodaCarthage" */;
+			buildConfigurationList = EA3884E64A244ED8B31430AC25A30A97 /* Build configuration list for PBXNativeTarget "Pods-KolodaSwift3Pods" */;
 			buildPhases = (
 				D911AE537B3128437269DF61A55E8712 /* Sources */,
 				71327CD996F20A3EC2A1B20E86A9478C /* Frameworks */,
@@ -490,7 +490,7 @@
 				FAD64F3928DE4C6134AE68B0C1A771A4 /* PBXTargetDependency */,
 				D74ABEB59A79400C0A8618DF054C2A53 /* PBXTargetDependency */,
 			);
-			name = "Pods-KolodaCarthage";
+			name = "Pods-KolodaSwift3Pods";
 			productName = "Pods-KolodaCarthage";
 			productReference = F8940C0F3CF2E93B798855ECF137A24B /* Pods_KolodaCarthage.framework */;
 			productType = "com.apple.product-type.framework";
@@ -534,7 +534,7 @@
 			projectRoot = "";
 			targets = (
 				2692A60CA9509B2E2A543556E170DCB4 /* Koloda */,
-				819D2F8F814C0D1A981E30D18FF1B333 /* Pods-KolodaCarthage */,
+				819D2F8F814C0D1A981E30D18FF1B333 /* Pods-KolodaSwift3Pods */,
 				C45290004E0078130C91A71711094467 /* pop */,
 			);
 		};
@@ -927,7 +927,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA3884E64A244ED8B31430AC25A30A97 /* Build configuration list for PBXNativeTarget "Pods-KolodaCarthage" */ = {
+		EA3884E64A244ED8B31430AC25A30A97 /* Build configuration list for PBXNativeTarget "Pods-KolodaSwift3Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F1D055B2E74A7C4043947884A62DE0C0 /* Debug */,

@@ -72,7 +72,7 @@
 		C51B174F1D6AE986002CBBDD = {
 			isa = PBXGroup;
 			children = (
-				C51B175A1D6AE986002CBBDD /* KolodaCarthage */,
+				C51B175A1D6AE986002CBBDD /* KolodaSwift3Pods */,
 				C51B178C1D6AF021002CBBDD /* Frameworks */,
 				C51B17591D6AE986002CBBDD /* Products */,
 				4C46151F11F1B6136E811587 /* Pods */,
@@ -87,7 +87,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C51B175A1D6AE986002CBBDD /* KolodaCarthage */ = {
+		C51B175A1D6AE986002CBBDD /* KolodaSwift3Pods */ = {
 			isa = PBXGroup;
 			children = (
 				C51B17931D6AF0C4002CBBDD /* Views */,
@@ -99,6 +99,7 @@
 				C51B178D1D6AF03B002CBBDD /* LaunchScreen.xib */,
 				C51B175F1D6AE986002CBBDD /* Main.storyboard */,
 			);
+			name = KolodaSwift3Pods;
 			path = KolodaCarthage;
 			sourceTree = "<group>";
 		};
